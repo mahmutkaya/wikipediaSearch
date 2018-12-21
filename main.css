@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial, sans-serif;
+  display: block;
+  color: #222;
+}
+
+#mainDiv {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 3%;
+  padding: 5%;
+  text-align: center;
+}
+
+button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  cursor: pointer;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+button:hover,
+button:active {
+  outline: none;
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+input {
+  width: 85%;
+  padding: 5px 8px 0 16px;
+  color: #222;
+  background: #fff;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  height: 44px;
+  margin: 0 auto;
+  cursor: text;
+}
+
+input:hover,
+input:focus,
+input:active {
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  outline: none;
+}
+
+#logoDiv {
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+#resultsDiv {
+  width: 60%;
+  margin: 2%;
+  padding: 2%;
+}
+
+a {
+  color: #757575;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #222;
+}
+
+footer {
+  width: 100%;
+  background: url("images/myFirstSvgLogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10%;
+  bottom: 0;
+  height: 50px;
+  position: relative;
+}
+
+/*===============phone settings===============*/
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  #mainDiv {
+    width: 80%;
+  }
+
+  input {
+    height: 25px;
+    padding: 2px 4px 0 8px;
+  }
+
+  button {
+    height: 21px;
+    min-width: 30px;
+    padding: 0 8px;
+  }
+
+  footer {
+    height: 25px;
+  }
+}
