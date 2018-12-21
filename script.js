@@ -20,7 +20,9 @@ createAndAppend("button", mainDiv, randomSearch());
 createAndAppend("footer", document.body);
 
 searchInputButton.addEventListener("click", () => {
-  fetchResults(searchInput.value);
+  searchInput.value === ''
+    ? alert('type something!')
+    : fetchResults(searchInput.value);
 });
 
 function randomSearch() {
